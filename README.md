@@ -14,12 +14,14 @@ The source code is available [**here**](code/MMS-source/MMS-source.ino).
 
 ## Overview
 
-The dashboard displays the following:
+
+
+The device displays the following:
 
 - Engine Head Temperature;
 - Engine Sump Temperature;
 - Battery Voltage;
-- Threshold warnings.
+- Threshold warnings;
 - Time;
 - Air Temperature;
 - Air Relative Humidity.
@@ -43,9 +45,9 @@ The main box houses most of the electronics, including:
 
 - Microcontroller (Raspberry Pi Pico);
 - Precision Clock Module (DS3231);
-- Custom Board for Analog Signal Processing;
-- Power Supply Module;
-- Button for Time Adjustment.
+- ADC Custom Board: mainly voltage dividers for the thermistors and voltage monitoring, along with signal filtering;
+- Power Supply Unit: mainly a buck converter module, extra filtering, and a MOSFET to power the device when the ignition is turned on;
+- Button for time adjustment.
 
 <br>
 
@@ -87,7 +89,7 @@ This enclosure houses the OLED display module.
 
 ## Air Monitoring Box Assembly
 
-This enclosure houses the DHT22 air temperature and humidity module, as well as a small blower fan. The fan creates negative pressure inside the enclosure to promote air circulation: this improves accuracy of the readings by reducing the influence of hot air from the engine.
+This enclosure houses the DHT22 air temperature and humidity module, as well as a small blower fan. The fan creates negative pressure inside the enclosure to promote air circulation. This, in addition to the snorkel, was designed in an effort to reduce the influence of hot air from the engine.
 
 ![Air Monitoring Box Assembly](images/docs/air_monitoring_box_assembly.jpg "Air Monitoring Box Assembly")
 
