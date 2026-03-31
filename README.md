@@ -46,7 +46,7 @@ The main box houses most of the electronics, including:
 - Microcontroller (Raspberry Pi Pico);
 - Precision Clock Module (DS3231);
 - ADC Custom Board: mainly voltage dividers for the thermistors and voltage monitoring, along with signal filtering;
-- Power Supply Unit: mainly a buck converter module, extra filtering, and a MOSFET to power the device when the ignition is turned on;
+- Power Supply Unit: mainly a buck converter module, extra filtering, and a MOSFET to power the device only when the ignition is turned on;
 - Button for time adjustment.
 
 <br>
